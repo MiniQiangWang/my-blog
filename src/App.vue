@@ -1,15 +1,22 @@
 <template>
   <div id="app">
+    <mb-header></mb-header>
     <router-view/>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+    import mbHeader from '@/components/mbHeader';
+    export default {
+        name: 'App',
+        components: {
+            'mb-header': mbHeader
+        },
+    }
 </script>
 
-<style>
+<style lang="scss">
+  @import '../static/css/common.scss';
+
   
 </style>
