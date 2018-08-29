@@ -9,7 +9,8 @@
     export default {
         data () {
             return {
-                data: []
+                data: [],
+                author: '豆子的博客'
             }
         }
     }
@@ -17,9 +18,11 @@
 
 <style scoped>
     header {
+        position: fixed;
         width: 100%;
-        height: 50px;
-        background: skyblue;
+        height: 60px;
+        border: 1px solid #fff;
+        z-index: 9999;
     }
 </style>
 
