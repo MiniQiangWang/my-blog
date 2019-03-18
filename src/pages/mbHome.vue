@@ -13,6 +13,8 @@
             <mb-skill class="skill"></mb-skill>
         </div>
         <div class="go-top" ref="top" @click="toTop"></div>
+        <my-chart></my-chart>
+        
     </div>
 </template>
 
@@ -20,11 +22,13 @@
     import mbHeader from '@/components/mbHeader';
     import mbSider from '@/components/mbSider';
     import mbSkill from '@/components/mbSkill';
+    import myChart from '@/components/myChart';
     export default {
         components: {
-            'mb-header': mbHeader,
-            'mb-sider': mbSider,
-            'mb-skill': mbSkill
+            mbHeader,
+            mbSider,
+            mbSkill,
+            myChart
         },
         data () {
             return {
@@ -47,7 +51,6 @@
         },
         created() {
             this.viewSize = {
-                // 'width': window.innerWidth+'px',
                 'height': window.innerHeight+'px'
             }
         },
